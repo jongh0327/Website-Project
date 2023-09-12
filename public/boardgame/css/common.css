@@ -1,0 +1,132 @@
+/* css/common.js */
+ 
+/* 도화지 크기 설정 */
+html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
+ 
+/* 공이 자유자재로 움직일 수 있도록 position을 'absolute'로 설정 */
+.ball { position: absolute; }
+/* 공을 선택했을 때, 그림자가 생기도록 설정 */
+.ball:hover { box-shadow: 0 0 10px 0 darkgray; cursor: pointer; }
+ 
+/* 공의 색상 설정 */
+.green { background-color: lightgreen; }
+.blue { background-color: lightblue; }
+.pink { background-color: lightpink }
+ 
+/* 공의 크기 설정 */
+.s200 { width: 200px; height: 200px; border-radius: 200px; }
+.s100 { width: 100px; height: 100px; border-radius: 100px; }
+.s50 { width: 50px; height: 50px; border-radius: 50px; }
+
+h1 {
+    font-family: 'Google Sans', 'Segeo UI';
+    font-size: 60px;
+    text-align: center;
+}
+
+.balll{
+    position: absolute; 
+    height: 4.2vw; 
+    width: auto; 
+    top: 41.2vw; 
+    left: 56vw;
+}
+
+.board {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    /*background-color: red;
+     
+    height: 400px; 
+    background: #eeeeee;
+    width: 400px;
+    */
+    color: rgb(0, 0, 0)
+}
+
+#board_img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: auto; 
+    width: 80%;
+}
+
+._b{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.function{
+    margin-left: 30px;
+}
+
+.function button{
+    background: transparent;
+    border: none;
+    color: transparent;
+    padding: 0px;
+}
+
+#card{
+    border: solid #000;
+    position: static;
+    height: auto; 
+    width: 15vw;
+    margin: auto;
+}
+
+#card_button{
+    display: block;
+    margin: auto;
+    
+    /*background-color: rgb(82, 186, 179);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-transform: uppercase;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;*/
+}
+
+.dice_roll{
+    margin-top: 5vh;
+}
+
+.dice_roll button{
+    background: transparent;
+    border: none;
+    color: transparent;
+    padding: 0px;
+}
+
+#dice_button {
+    /*background-color: rgb(82, 186, 179);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-transform: uppercase;
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;*/
+    display: block;
+    margin: 0px auto;
+}
+
+#placeholder {
+    display: flex;
+    height: 7vw;
+    width: 7vw;
+    padding: 23px;
+    margin: 5px auto;
+    border: 1px solid gray;
+    border-radius: 10px;  
+    font-size:80px;
+    font-family: Helvetica, Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}

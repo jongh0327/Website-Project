@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Bingo!</title>
+</head>
+<body>
+    <img id="title" src="img/로고.png">
+    <div id="bingo_num">0/25</div>
+
+    <div class="mainboard">
+    <div class="OX">
+        <input type="image" id="O" src="img/o.png">
+        <input type="image" id="X" src="img/x.png">
+        <input type="image" id="current" src="img/1_0.png">
+    </div>
+
+    <table class="board" >
+        <tr class="line">
+            <th class="cell" id ="1" value=1></th>
+            <th class="cell" id ="2" value=2></th>
+            <th class="cell" id ="3" value=3></th>
+            <th class="cell" id ="4" value=4></th>
+            <th class="cell" id ="5" value=5></th>
+        </tr>
+        <tr class="line">
+            <th class="cell" id ="6" value=6></th>
+            <th class="cell" id ="7" value=7></th>
+            <th class="cell" id ="8" value=8></th>
+            <th class="cell" id ="9" value=9></th>
+            <th class="cell" id ="10" value=10></th>
+        </tr>
+        <tr class="line">
+            <th class="cell" id ="11" value=11></th>
+            <th class="cell" id ="12" value=12></th>
+            <th class="cell" id ="13" value=13></th>
+            <th class="cell" id ="14" value=14></th>
+            <th class="cell" id ="15" value=15></th>
+        </tr>
+        <tr class="line">
+            <th class="cell" id ="16" value=16></th>
+            <th class="cell" id ="17" value=17></th>
+            <th class="cell" id ="18" value=18></th>
+            <th class="cell" id ="19" value=19></th>
+            <th class="cell" id ="20" value=20></th>
+        </tr>
+        <tr class="line">
+            <th class="cell" id ="21" value=21></th>
+            <th class="cell" id ="22" value=22></th>
+            <th class="cell" id ="23" value=23></th>
+            <th class="cell" id ="24" value=24></th>
+            <th class="cell" id ="25" value=25></th>
+        </tr>
+    </table> 
+    
+    </div>
+
+    <div class="controls__btns">
+        <button id="jsReset" onclick="reset()"><img class=_b src="img/re_b.png"></button>
+    </div>
+    
+    
+    <script src="jquery.js"></script>
+    <script src="common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/common.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/event_handler.js"></script>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class=inputs>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄱ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄴ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄷ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄹ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅁ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅂ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅅ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅇ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅈ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅊ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅋ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅌ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅍ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅎ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄲ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㄸ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅃ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅆ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅉ" onclick="addimage(this)"/>
+                </figure>
+                
+            </div>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅏ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅑ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅓ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅕ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅗ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅛ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅜ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅠ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅡ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅣ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅐ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅒ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅔ" onclick="addimage(this)"/>
+               </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅖ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅘ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅙ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅚ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅝ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅞ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅟ" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="button" class="add" value="ㅢ" onclick="addimage(this)"/>
+                </figure>
+                
+            </div>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/html2canvas.js"></script>
+        <div id = "save_region" style="width:1px; height:1px; top:0px; left:0px"></div>
+        <div class="controls__btns">
+            <button id="jsSave" onclick="save()">저장</button>
+            <button id="jsReset" onclick="reset()">리셋</button>
+        </div>
+    </body>
+</html>

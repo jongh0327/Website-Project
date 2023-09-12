@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/common.css" rel="stylesheet"/>
+        <script src="js/event_handler.js"></script>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+
+        <img src = "img/edge.png" class=paper>
+
+        <div class=inputs>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="image"  src='img/1.png' height='60' width='60' class="add" value="1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/2.png' height='60' width='60' class="add" value="2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/3.png' height='60' width='60' class="add" value="3" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/4.png' height='60' width='60' class="add" value="4" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/5.png' height='60' width='60' class="add" value="5" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/6.png' height='60' width='60' class="add" value="6" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/7.png' height='60' width='60' class="add" value="7" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/8.png' height='60' width='60' class="add" value="8" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/9.png' height='60' width='60' class="add" value="9" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/10.png' height='60' width='60' class="add" value="10" onclick="addimage(this)"/>
+                </figure>
+            </div>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="image"  src='img/petal.png' height='50' width='50' class="add" value="petal" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/waterdrop.png' height='50' width='50' class="add" value="waterdrop" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/sun.png' height='50' width='50' class="add" value="sun" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/flower.png' height='50' width='50' class="add" value="flower" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/diamond.png' height='50' width='50' class="add" value="diamond" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/apple.png' height='50' width='50' class="add" value="apple" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/grape.png' height='50' width='50' class="add" value="grape" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/watermelon.png' height='50' width='50' class="add" value="watermelon" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/icecream.png' height='50' width='50' class="add" value="icecream" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/sprout.png' height='50' width='50' class="add" value="sprout" onclick="addimage(this)"/>
+                </figure>
+            </div>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/html2canvas.js"></script>
+        <div id = "save_region" style="width:1px; height:1px; top:0px; left:0px"></div>
+        <div class="controls__btns">
+            <button id="jsSave" onclick="save()"><img class=_b src="img/save_b.png"></button>
+            <button id="jsReset" onclick="reset()"><img class=_b src="img/re_b.png"></button>
+        </div>
+    </body>
+</html>

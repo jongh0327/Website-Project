@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/common.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <img src = "img/7.png" class=paper>
+        
+        <div class=textplace>
+            <textarea class=textbox1></textarea>
+            <textarea class=textbox2></textarea>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/html2canvas.js"></script>
+        
+        <div id = "save_region" style="width:1px; height:1px; top:0px; left:0px"></div>
+        <div class="controls__btns">
+            <button id="jsSave" onclick="save()"><img class=_b src="img/save_b.png"></button>
+            <button id="jsReset" onclick="reset()"><img class=_b src="img/re_b.png"></button>
+        </div>
+    </body>
+</html>

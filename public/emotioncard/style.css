@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #eee;
+    text-align: center;
+}
+
+div {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* 
+    height: 400px; 
+    background: #eeeeee;
+    width: 400px;
+    */
+    color: rgb(0, 0, 0)
+}
+
+#title {
+    height: 20vh;
+    width: auto;
+}
+
+#bingo_num{
+    justify-content: center;
+    text-align: center;
+    font-size: 50;
+    font-family: 'UhBeeSe_hyun';
+    color: green;
+    font-weight: bold;
+}
+
+.board{
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-right: auto;*/
+}
+
+.cell{
+    display: inline-block;
+    /*background: url("img/빙고1.png");*/
+    background-size: 10vw;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    margin: 4px;
+    margin-right: 6px;
+}
+
+/*.cell:hover {
+    background: url("img/빙고2.png");
+    background-size: 100px;
+}*/
+
+.cell.checked {
+    /*background: url("img/빙고3.png");*/
+    background-size: 10vw;
+    width: 10vw;
+    height: 10vw;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*
+.cell2{
+    display: inline-block;
+    background: url("img/빙고1.png");
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    margin-right: 6px;
+}*/
+
+.sum {
+    color: rgb(47, 99, 167);
+}
+
+  
+.controls__btns button:active {
+    transform: scale(0.98);
+}
+  
+.controls__btns button {
+    /*all: unset;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px grey;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;*/
+    background: transparent;
+    border: none;
+    color: transparent;   
+}
+
+._b{
+    height: auto;
+    width: max(7vw,120px);
+}

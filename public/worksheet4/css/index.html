@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/common.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <img src = "img/4.png" class=paper>
+
+        <div class=textplace>
+            <textarea class=textbox1></textarea>
+            <textarea class=textbox2></textarea>
+            <textarea class=textbox3></textarea>
+            <textarea class=textbox4></textarea>
+            <textarea class=textbox5></textarea>
+            <textarea class=textbox6></textarea>
+        </div>
+        
+        <script src="js/common.js"></script>
+        <script src="js/html2canvas.js"></script>
+        
+        <div id = "save_region" style="width:1px; height:1px; top:0px; left:0px"></div>
+        <div class="controls__btns">
+            <button id="jsSave" onclick="save()">저장</button>
+            <button id="jsReset" onclick="reset()">리셋</button>
+        </div>
+    </body>
+</html>

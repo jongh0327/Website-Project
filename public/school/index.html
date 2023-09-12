@@ -1,0 +1,206 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/common.css" rel="stylesheet"/>
+        <script src="js/event_handler.js"></script>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class=inputs>
+            <div class=consonant>
+                
+                <figure class="letter">
+                    <button id="jsSave" value="classroom" onclick="changeback(this)"><img class=_l src="img/classroom_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="hallway" onclick="changeback(this)"><img class=_l src="img/hallway_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="library" onclick="changeback(this)"><img class=_l src="img/library_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="teacheroffice" onclick="changeback(this)"><img class=_l src="img/teacheroffice_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="healthroom" onclick="changeback(this)"><img class=_l src="img/healthroom_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="cafeteria" onclick="changeback(this)"><img class=_l src="img/cafeteria_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="playground" onclick="changeback(this)"><img class=_l src="img/playground_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="tvcenter" onclick="changeback(this)"><img class=_l src="img/tvcenter_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="field" onclick="changeback(this)"><img class=_l src="img/field_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="sciencelab" onclick="changeback(this)"><img class=_l src="img/sciencelab_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="gym" onclick="changeback(this)"><img class=_l src="img/gym_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="computerlab" onclick="changeback(this)"><img class=_l src="img/computerlab_b.png"></button>
+                </figure>
+                <figure class="letter">
+                    <button id="jsSave" value="blank" onclick="changeback(this)"><img class=_l src="img/blank_b.png"></button>
+                </figure>
+            </div>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="image"  src='img/book.png' height='60' width='60' class="add" value="book" onclick="addimage_mid(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/desk.png' height='60' width='60' class="add" value="desk" onclick="addimage_big(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/chair1.png' height='60' width='60' class="add" value="chair1" onclick="addimage_mid(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/chair2.png' height='60' width='60' class="add" value="chair2" onclick="addimage_mid(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/medicine1.png' height='60' width='60' class="add" value="medicine1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/medicine2.png' height='60' width='60' class="add" value="medicine2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/needle.png' height='60' width='60' class="add" value="needle" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/medibox.png' height='60' width='60' class="add" value="medibox" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/chalkboard1.png' height='60' width='60' class="add" value="chalkboard1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/chalkboard2.png' height='60' width='60' class="add" value="chalkboard2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/chalk.png' height='60' width='60' class="add" value="chalk" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/notebook.png' height='60' width='60' class="add" value="notebook" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/pencil.png' height='60' width='60' class="add" value="pencil" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/basketball.png' height='60' width='60' class="add" value="basketball" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/badminton.png' height='60' width='60' class="add" value="badminton" onclick="addimage_mid(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/tabletennistable.png' height='60' width='60' class="add" value="tabletennistable" onclick="addimage_big(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/tabletennisracket.png' height='60' width='60' class="add" value="tabletennisracket" onclick="addimage(this)"/>
+                </figure>
+            </div>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="image"  src='img/foodtray1.png' height='60' width='60' class="add" value="foodtray1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/foodtray2.png' height='60' width='60' class="add" value="foodtray2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/spoon.png' height='60' width='60' class="add" value="spoon" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/slate.png' height='60' width='60' class="add" value="slate" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/headphone.png' height='60' width='60' class="add" value="headphone" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/seesaw.png' height='60' width='60' class="add" value="seesaw" onclick="addimage_big(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/woodhorse.png' height='60' width='60' class="add" value="woodhorse" onclick="addimage_mid(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/seesaw.png' height='60' width='60' class="add" value="swing" onclick="addimage_big(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/usb.png' height='60' width='60' class="add" value="usb" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/book2.png' height='60' width='60' class="add" value="book2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/folder.png' height='60' width='60' class="add" value="folder" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/backpack.png' height='60' width='60' class="add" value="backpack" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/broom.png' height='60' width='60' class="add" value="broom" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/shoe1.png' height='60' width='60' class="add" value="shoe1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/shoe2.png' height='60' width='60' class="add" value="shoe2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/beaker.png' height='60' width='60' class="add" value="beaker" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/beaker2.png' height='60' width='60' class="add" value="beaker2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/spoid.png' height='60' width='60' class="add" value="spoid" onclick="addimage(this)"/>
+                </figure>
+            </div>
+            <div class=consonant>
+                <figure class="letter">
+                    <input type="image"  src='img/person1.png' height='60' width='60' class="add" value="person1" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/person2.png' height='60' width='60' class="add" value="person2" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter"></figure>
+                    <input type="image"  src='img/person3.png' height='60' width='60' class="add" value="person3" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/person4.png' height='60' width='60' class="add" value="person4" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/person5.png' height='60' width='60' class="add" value="person5" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/person6.png' height='60' width='60' class="add" value="person6" onclick="addimage_person(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/character1.png' height='60' width='60' class="add" value="character1" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/character2.png' height='60' width='60' class="add" value="character2" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/character3.png' height='60' width='60' class="add" value="character3" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/character4.png' height='60' width='60' class="add" value="character4" onclick="addimage(this)"/>
+                </figure>
+                <figure class="letter">
+                    <input type="image"  src='img/character5.png' height='60' width='60' class="add" value="character5" onclick="addimage(this)"/>
+                </figure>
+            </div>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/html2canvas.js"></script>
+        <div id = "save_region" style="width:1px; height:1px; top:0px; left:0px"></div>
+        <div class="controls__btns">
+            <button id="jsSave" onclick="save()"><img class=_b src="img/save_b.png"></button>
+            <button id="jsReset" onclick="reset()"><img class=_b src="img/re_b.png"></button>
+        </div>
+    </body>
+</html>
